@@ -124,6 +124,10 @@ nav ul li a:hover{
 	color: #ADA5A5;
 }
 
+div.galeria:hover{
+			border: 1px solid lightcoral;
+			transform: rotate(-2deg);
+}
 /*fin animaciones */
 
 table{
