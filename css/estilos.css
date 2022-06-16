@@ -1,0 +1,341 @@
+@import url('https://fonts.googleapis.com/css2?family=Akshar:wght@300&family=Koulen&display=swap');
+/*font-family: 'Akshar', sans-serif;
+font-family: 'Koulen', cursive; */
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+/*Pagina index*/
+
+.menu{
+	background-color: #F9CCE0;
+	height: auto;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	box-shadow: 5px 0 10px rgba(0, 0, 0, 0.6);
+	position: sticky;
+}
+
+.menu_items{
+	display: flex;
+	list-style: none;
+	margin-right: 1rem;
+	font-family:'Akshar', sans-serif;
+	font-size: 1.5rem;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+
+}
+
+.menu_items li{
+	border-radius: 3px;
+	margin:0 2rem;
+}
+
+.menu_items li a{
+	text-decoration: none;
+}
+
+.titulos{
+	font-family: 'Koulen', cursive;
+	font-size: 5rem;
+	color: #BD6F95;
+	letter-spacing: 2px;
+	padding-top: 1.5rem;
+	text-align: center;
+	text-shadow: 1px 2px 2px black, 0 0 25px white;
+
+}
+
+main{
+	height: auto;
+	width: 100%;
+	background-image: url(../images/background.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.carrousel{
+		display: flex;
+		justify-content: space-around;
+}
+
+/*Modificadores de textos*/
+
+.textos{
+	font-family: 'Akshar', sans-serif;
+	font-size: 2.5rem;
+	letter-spacing: 1px;
+	color: #BD6F95;
+	text-align: center;
+}
+
+.titulos{
+	font-family: 'Koulen', cursive;
+	font-size: 5rem;
+	color: #BD6F95;
+	letter-spacing: 2px;
+	padding-top: 1.5rem;
+	text-align: center;
+	text-shadow: 1px 2px 2px black, 0 0 25px white;
+
+}
+
+#ruta{
+	text-decoration: none;
+}
+
+ul li{
+	list-style: none;
+}
+
+
+/*Footer*/
+
+footer{
+	background-color: #E494BA;
+	height: auto;
+	width: 100%;
+	display: inline-flex;
+	justify-content: space-around;
+}
+.footerTitulo{
+	font-family:'Koulen', cursive;
+	font-size:1.5rem;
+	letter-spacing: 2px;
+	padding-left: 1.5rem;
+	color: #BD6F95;
+	text-shadow: 1px 2px 2px black, 0 0 25px white;
+}
+
+.iconos{
+	padding-left: 30px;
+}
+
+/*animaciones*/
+
+nav ul li a:hover{
+	color: #ADA5A5;
+}
+
+/*fin animaciones */
+
+table{
+	background-color: white;
+	opacity: 0.5;
+  	filter:  alpha(opacity=50);
+  	font-family: 'Akshar', sans-serif;
+	font-size: 1.5rem;
+	letter-spacing: 1px;
+	color: #040101;
+	margin: 0.5rem auto;
+	width: 80%;
+	border-collapse: collapse;
+
+
+}
+
+th, td{
+	padding: 0.5rem;
+}
+
+form{
+	width: 50%;
+	margin: 0 auto;
+	background-color: white;
+	opacity: 0.5;
+  	filter:alpha(opacity=50);
+  	font-family: 'Akshar', sans-serif;
+	font-size: 1.5rem;
+	letter-spacing: 1px;
+	color: black;
+	text-align: center;
+}
+
+/*pagina de servicios*/
+
+.galeria-flex{
+	display: grid;
+	grid-template-columns: repeat(3,1fr);
+	grid-template-rows: repeat(3, auto);
+	grid-template-areas: "encabezado encabezado encabezado"
+	"figUno figDos figTres"
+	"footer footer footer";
+
+}
+
+#encabezado-servicios{
+	grid-area: encabezado;
+}
+
+#figureUno{
+	grid-area: figUno;
+}
+
+#figureDos{
+	grid-area: figDos;
+}
+
+#figureTres{
+	grid-area: figTres;
+}
+
+figure{
+ 		width: 30%;
+}
+
+.figure-text{
+	text-align: center;
+	text-shadow: 2px 2px 5px purple;
+	padding: 10px;
+	font-family: 'Akshar', sans-serif;
+	font-size: 1.5rem;
+	letter-spacing: 1px;
+	color: #040101;
+}
+
+.galeria{
+	margin: 10px 20px;
+	box-shadow: 0 4px 8px 0 lightpink, 0 6px 20px 0 rgba(0,0,0,0.19);
+	width: 350px;
+}
+
+div.galeria img{
+	width: 100%; 
+	height: auto;
+}
+
+
+.contenedor{
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(3, auto);
+	grid-template-areas: "main main"
+						 "section section"
+						 "pie pie"
+
+}
+
+#main{
+	grid-area: main;
+}
+
+#section{
+	grid-area: section;
+}
+
+#footer{
+	grid-area: pie;
+}
+
+/*pagina sobre nosotros*/
+
+.contenedorPadre{
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(3, auto);
+	grid-template-areas: "encabezado encabezados"
+						"historia nosotros"
+						"footer footer";
+	}
+
+.somosMeraki{
+	display: inline-flex;
+	justify-content: space-around;
+}
+#encabezado{
+	grid-area: encabezado;
+}
+
+#encabezados{
+	grid-area: encabezados;
+}
+
+#historia{
+	grid-area: historia;
+}
+
+#nosotros{
+	grid-area: nosotros;
+}
+
+.quienesSomos{
+	font-family: 'Koulen', cursive;
+	font-size: 3.5rem;
+	color: #BD6F95;
+	letter-spacing: 2px;
+	text-align: center;
+	text-shadow: 1px 2px 2px black, 0 0 25px white;
+}
+
+.font-size{
+	font-family: 'Akshar', sans-serif;
+	font-size: 1.5rem;
+	letter-spacing: 1px;
+	color: #BD6F95;
+}
+
+/*media queries*/
+@media screen and (max-width: 414px){
+		.menu_items{
+			display: block;
+		}
+
+		.carrousel{
+			display: flex;
+			flex-flow: column wrap;
+			justify-content: flex-start;
+			align-items: center;
+		}
+
+		#footer{
+			display: block;
+			align-items: center;
+		}
+
+		.somosMeraki{
+			display: flex;
+			flex-flow: column wrap;
+			justify-content: center;
+		}
+
+		.galeria-flex{
+			display: flex;
+			flex-flow: column wrap;
+			justify-content: center;
+		}
+}
+
+@media screen and (max-width: 768px){
+			.menu_items{
+			display: block;
+		}
+			#footer{
+			display: block;
+			align-items: center;
+		}
+
+		.carrousel{
+			display: flex;
+			flex-flow: column wrap;
+			align-items: center;
+		}
+
+		.somosMeraki{
+			display: flex;
+			flex-flow: column wrap;
+			justify-content: center;
+		}
+
+		.galeria-flex{
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+		}
+}
