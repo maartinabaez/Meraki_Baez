@@ -12,7 +12,7 @@ font-family: 'Koulen', cursive; */
 .menu{
 	background-color: #F9CCE0;
 	height: auto;
-	width: 100%;
+	width: 100vw;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -53,7 +53,7 @@ font-family: 'Koulen', cursive; */
 
 main{
 	height: auto;
-	width: 100%;
+	width: 100vw;
 	background-image: url(../images/background.jpg);
 	background-repeat: no-repeat;
 	background-position: center;
@@ -70,15 +70,15 @@ main{
 
 .textos{
 	font-family: 'Akshar', sans-serif;
-	font-size: 2.5rem;
-	letter-spacing: 1px;
+	font-size: 3em;
+	letter-spacing: 0.2rem;
 	color: #BD6F95;
 	text-align: center;
 }
 
 .titulos{
 	font-family: 'Koulen', cursive;
-	font-size: 5rem;
+	font-size: 4em;
 	color: #BD6F95;
 	letter-spacing: 2px;
 	padding-top: 1.5rem;
@@ -101,7 +101,7 @@ ul li{
 footer{
 	background-color: #E494BA;
 	height: auto;
-	width: 100%;
+	width: 100vw;
 	display: inline-flex;
 	justify-content: space-around;
 }
@@ -115,7 +115,7 @@ footer{
 }
 
 .iconos{
-	padding-left: 30px;
+	padding-left: 0.5rem;
 }
 
 /*animaciones*/
@@ -197,7 +197,7 @@ figure{
 .figure-text{
 	text-align: center;
 	text-shadow: 2px 2px 5px purple;
-	padding: 10px;
+	padding: 0.7em;
 	font-family: 'Akshar', sans-serif;
 	font-size: 1.5rem;
 	letter-spacing: 1px;
@@ -286,7 +286,7 @@ div.galeria img{
 }
 
 /*media queries*/
-@media screen and (max-width: 414px){
+@media screen and (max-width: 300px){
 		.menu_items{
 			display: block;
 		}
@@ -314,6 +314,17 @@ div.galeria img{
 			flex-flow: column wrap;
 			justify-content: center;
 		}
+
+		.titulos{
+			font-size: 0.5em;
+				}
+
+		.textos{
+			font-size: 0.4em;
+				}
+		figure{
+ 		width: 30%;
+ 			}
 }
 
 @media screen and (max-width: 768px){
@@ -342,4 +353,14 @@ div.galeria img{
 			flex-direction: column;
 			justify-content: center;
 		}
+		.titulos{
+			font-size: 1.5em;
+				}
+
+		.textos{
+			font-size: 0.8em;
+				}
+		figure{
+ 		width: 30%;
+ 			}
 }
