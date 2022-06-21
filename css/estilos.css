@@ -11,33 +11,15 @@ font-family: 'Koulen', cursive; */
 
 .menu{
 	background-color: #F9CCE0;
-	height: auto;
-	width: 100vw;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
 	box-shadow: 5px 0 10px rgba(0, 0, 0, 0.6);
 	position: sticky;
 }
 
 .menu_items{
-	display: flex;
-	list-style: none;
-	margin-right: 1rem;
 	font-family:'Akshar', sans-serif;
 	font-size: 1.5rem;
 	letter-spacing: 2px;
 	text-transform: uppercase;
-
-}
-
-.menu_items li{
-	border-radius: 3px;
-	margin:0 2rem;
-}
-
-.menu_items li a{
-	text-decoration: none;
 }
 
 .titulos{
@@ -53,12 +35,13 @@ font-family: 'Koulen', cursive; */
 
 main{
 	height: auto;
-	width: 100vw;
+	width: 100%;
 	background-image: url(../images/background.jpg);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
 	background-attachment: fixed;
+	border-collapse: collapse; 
 }
 
 .carrousel{
@@ -104,6 +87,7 @@ footer{
 	width: 100vw;
 	display: inline-flex;
 	justify-content: space-around;
+	border-collapse: collapse;
 }
 .footerTitulo{
 	font-family:'Koulen', cursive;
@@ -271,7 +255,7 @@ div.galeria img{
 
 .quienesSomos{
 	font-family: 'Koulen', cursive;
-	font-size: 3.5rem;
+	font-size: 2rem;
 	color: #BD6F95;
 	letter-spacing: 2px;
 	text-align: center;
@@ -322,9 +306,7 @@ div.galeria img{
 		.textos{
 			font-size: 0.4em;
 				}
-		figure{
- 		width: 30%;
- 			}
+		
 }
 
 @media screen and (max-width: 768px){
