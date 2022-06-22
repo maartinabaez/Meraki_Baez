@@ -13,6 +13,7 @@ font-family: 'Koulen', cursive; */
 	background-color: #F9CCE0;
 	box-shadow: 5px 0 10px rgba(0, 0, 0, 0.6);
 	position: sticky;
+	overflow: hidden;
 }
 
 .menu_items{
@@ -35,25 +36,20 @@ font-family: 'Koulen', cursive; */
 
 main{
 	height: auto;
-	width: 100%;
+	width: 100vw;
+	max-width: 100%;
 	background-image: url(../images/background.jpg);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
-	background-attachment: fixed;
-	border-collapse: collapse; 
-}
-
-.carrousel{
-		display: flex;
-		justify-content: space-around;
+	overflow: hidden;
 }
 
 /*Modificadores de textos*/
 
 .textos{
 	font-family: 'Akshar', sans-serif;
-	font-size: 3em;
+	font-size: 2.5em;
 	letter-spacing: 0.2rem;
 	color: #BD6F95;
 	text-align: center;
@@ -63,7 +59,7 @@ main{
 	font-family: 'Koulen', cursive;
 	font-size: 4em;
 	color: #BD6F95;
-	letter-spacing: 2px;
+	letter-spacing: 0.2rem;
 	padding-top: 1.5rem;
 	text-align: center;
 	text-shadow: 1px 2px 2px black, 0 0 25px white;
@@ -85,9 +81,10 @@ footer{
 	background-color: #E494BA;
 	height: auto;
 	width: 100vw;
+	max-width: 100%;
 	display: inline-flex;
 	justify-content: space-around;
-	border-collapse: collapse;
+	overflow: hidden;
 }
 .footerTitulo{
 	font-family:'Koulen', cursive;
@@ -108,11 +105,19 @@ nav ul li a:hover{
 	color: #ADA5A5;
 }
 
-div.galeria:hover{
+figure:hover{
 			border: 1px solid lightcoral;
 			transform: rotate(-2deg);
 }
 /*fin animaciones */
+
+/*pagina de productos*/
+
+.fila-img{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+}
 
 table{
 	background-color: white;
@@ -149,6 +154,7 @@ form{
 /*pagina de servicios*/
 
 .galeria-flex{
+	max-width: 100%;
 	display: grid;
 	grid-template-columns: repeat(3,1fr);
 	grid-template-rows: repeat(3, auto);
@@ -199,19 +205,26 @@ div.galeria img{
 	height: auto;
 }
 
-
+/*index*/
 .contenedor{
+	max-width: 100%;
 	display: grid;
-	grid-template-columns: repeat(2, 1fr);
-	grid-template-rows: repeat(3, auto);
-	grid-template-areas: "main main"
-						 "section section"
-						 "pie pie"
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(4, auto);
+	grid-template-areas: "main main main"
+						"galeria galeria galeria"
+						 "section section section"
+						 "pie pie pie"
 
 }
 
 #main{
 	grid-area: main;
+}
+
+#galeriaFotos{
+	grid-area: galeria;
+
 }
 
 #section{
@@ -222,51 +235,10 @@ div.galeria img{
 	grid-area: pie;
 }
 
-/*pagina sobre nosotros*/
-
-.contenedorPadre{
-	display: grid;
-	grid-template-columns: repeat(2, 1fr);
-	grid-template-rows: repeat(3, auto);
-	grid-template-areas: "encabezado encabezados"
-						"historia nosotros"
-						"footer footer";
-	}
-
-.somosMeraki{
+.carrousel{
 	display: inline-flex;
-	justify-content: space-around;
-}
-#encabezado{
-	grid-area: encabezado;
-}
-
-#encabezados{
-	grid-area: encabezados;
-}
-
-#historia{
-	grid-area: historia;
-}
-
-#nosotros{
-	grid-area: nosotros;
-}
-
-.quienesSomos{
-	font-family: 'Koulen', cursive;
-	font-size: 2rem;
-	color: #BD6F95;
-	letter-spacing: 2px;
-	text-align: center;
-	text-shadow: 1px 2px 2px black, 0 0 25px white;
-}
-
-.font-size{
-	font-family: 'Akshar', sans-serif;
-	font-size: 1.5rem;
-	letter-spacing: 1px;
-	color: #BD6F95;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
 }
 
 /*media queries*/
