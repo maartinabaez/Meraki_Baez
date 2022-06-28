@@ -1,0 +1,23 @@
+{
+  "name": "meraki_baez",
+  "version": "1.0.0",
+  "description": "trabajo final de coderhouse",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maartinabaez/Meraki_Baez.git"
+  },
+  "author": "Martina Baez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/maartinabaez/Meraki_Baez/issues"
+  },
+  "homepage": "https://github.com/maartinabaez/Meraki_Baez#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.18"
+  }
+}
