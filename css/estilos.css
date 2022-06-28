@@ -130,13 +130,13 @@ table{
 
 /*Pagina de contacto*/
 form{
-	width: 50%;
+	width: 70%;
 	margin: 0 auto;
 	background-color: white;
 	opacity: 0.5;
   	filter:alpha(opacity=50);
   	font-family: 'Akshar', sans-serif;
-	font-size: 1.5rem;
+	font-size: 2rem;
 	letter-spacing: 1px;
 	color: black;
 	text-align: center;
@@ -269,6 +269,9 @@ div.galeria img{
 		.textos{
 			font-size: 0.4em;
 				}
+		form{
+			width: 100%;
+		}
 		
 }
 
@@ -308,4 +311,6 @@ div.galeria img{
 		figure{
  		width: 30%;
  			}
+ 		form{
+	    width: 80%;
 }

@@ -70,51 +70,68 @@
 			</fieldset>
 		</form>
 	</section>
-
-	<section>
+<!--inicio tabla dos-->	
 		<h2 class="titulos">¿Queres comprar nuestros productos?</h2>
-		<form action="">
-			<fieldset>
-				<legend>¡Dejanos la informacion de tu compra!</legend>
-				<label for="nombre">Nombre</label>
-				<input type="text" name="nombre" id="nombre" placeholder="Tu nombre">
+		<form>
+		  <fieldset>
+		    <legend>Dejanos la informacion de tu compra</legend>
+		    <div class="mb-3">
+		      <label for="Nombre" class="form-label">Nombre</label>
+		      <input type="text" name="nombre" id="nombre" placeholder="Tu nombre">
+			<br>
+		    </div>
+		     <div class="mb-3">
+		      	<label for="Apellido" class="form-label">Apellido</label>
+		      	<input type="text" name="apellido" id="apellido" placeholder="Tu apellido">
+		     </div>
+		     <div class="mb-3">
+		      	<label for="DNI" class="form-label">DNI</label>
+		      	<input type="text" name="dni" id="dni" placeholder="DNI del Comprador">
+		     </div>
+		     <div class="mb-3">
+		      	<label for="email" class="form-label">Email</label>
+		      	<input type="email" name="email" id="email" placeholder="tuemail@algo.com">
+		     </div>
+		    <div class="mb-3">
+		      	<label for="localidad" class="form-label">Localidad</label>
+		      	<select name="localidad" id="localidad" class="form-select">
+		        <option value="CABA">CABA</option>
+		        <option value="GBA">GBA</option>
+		        <option value="interior">Interior del país</option>
+		      </select>
+		    </div>
+		    <div class="mb-3">
+		      <div class="form-check">
+		      	<p>SELECCIONE MÉTODO DE ENTREGA</p>
+		        <input class="form-check-input" type="radio" id="envio" name="entrega" value="envio">
+		        <label class="form-check-label" for="envio">
+		          Envio
+		        </label>
+		        <br>
+		         <input class="form-check-input" type="radio" id="disabledFieldsetCheck">
+		        <label class="form-check-label" for="retiro">
+		          Retiro en local
+		        </label>
+		        <br>
+		        <br>
+		        <p>MÉTODO DE PAGO</p>
+		         <input class="form-check-input" type="radio" id="transferencia" name="pago" value="transferencia">
+		        <label class="form-check-label" for="transferencia">
+		         Transferencia bancaria
+		        </label>
+		        <br>
+		        <input class="form-check-input" type="radio" id="tarjeta" name="pago" value="tarjeta">
+		        <label class="form-check-label" for="tarjeta">
+		         Tarjeta de Crédito
+		        </label>
+		        <br>
+		        <textarea placeholder="Detalle su pedido aqui. Ej: cantidad de articulos, código del producto y color"></textarea>
 				<br>
-				<label for="apellido">Apellido</label>
-				<input type="text" name="apellido" id="apellido" placeholder="Tu apellido">
-				<br>
-				<label for="dni">Documento del comprador</label>
-				<input type="text" name="dni" id="dni" placeholder="tu DNI" >
-				<br>
-				<label for="email">Email</label>
-				<input type="email" name="email" id="email" placeholder="tuemail@algo.com">
-				<br>
-				<label for="localidad">Localidad</label>
-				<select name="localidad" id="localidad">
-					<option value="CABA">CABA</option>
-					<option value="GBA">GBA</option>
-					<option value="interior">Interior del pais</option>
-				</select>
-				<p>Seleccione método de entrega</p>
-				<label for="envio">Envio</label>
-				<input type="radio" id="envio" name="entrega" value="envio">
-				<br>
-				<label for="retiro">Retiro en local</label>
-				<input type="radio" id="retiro" name="entrega" value="retiro">
-				<br>
-				<p>Método de pago</p>
-				<label for="transferencia">Transferencia</label>
-				<input type="radio" id="transferencia" name="pago" value="transferencia">
-				<br>
-				<label for="tarjeta">Tarjeta de Crédito</label>
-				<input type="radio" id="tarjeta" name="pago" value="tarjeta">
-				<br>
-				<textarea cols="30" rows="10" placeholder="Detalle su pedido aqui. Ej: cantidad de articulos, código del producto y color"></textarea>
-				<br>
-                <input type="submit" value="Enviar">
-                <input type="reset" value="Cancelar">
-			</fieldset>
+		      </div>
+		    </div>
+		    <button type="submit" class="btn btn-primary">Enviar</button>
+		  </fieldset>
 		</form>
-	</section>
  	<p class="textos">¡Gracias por confiar tu estetica personal a MERAKI!</p>
  </main>
 <!--final de Main-->
@@ -138,16 +155,9 @@
  						<img src="images/logotiktok.png" alt="TikTok">
  					</a>
  				</li>
- 				<li class="textos">Celular</li>
- 				<li class="textos">Email</li>
  			</ul>
  		</section>
- 		<aside>
- 			<h3 class="footerTitulo">Comunicate con nosotros</h3>
- 			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3278.5895195837234!2d-58.259988585168514!3d-34.740739780424164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a32e6000f7323b%3A0x40f76536fb8384d6!2sLaprida%20%26%20Andr%C3%A9s%20Baranda%2C%20Quilmes%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1652813774148!5m2!1ses!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
- 		</aside>
  	</footer>
- </div>
 <!--Final de Pie de pagina-->
  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
