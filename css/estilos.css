@@ -118,27 +118,15 @@ figure:hover{
 	flex-wrap: wrap;
 	justify-content: space-evenly;
 }
-/*
+
 table{
-	background-color: white;
-	opacity: 0.5;
-  	filter:  alpha(opacity=50);
   	font-family: 'Akshar', sans-serif;
 	font-size: 1.5rem;
 	letter-spacing: 1px;
 	color: #040101;
-	margin: 0.5rem auto;
-	width: 80%;
-	border-collapse: collapse;
-
-
+	text-align: center;
 }
 
-th, td{
-	padding: 0.5rem;
-}
-
-*/
 
 /*Pagina de contacto*/
 form{
