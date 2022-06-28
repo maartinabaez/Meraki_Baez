@@ -118,7 +118,7 @@ figure:hover{
 	flex-wrap: wrap;
 	justify-content: space-evenly;
 }
-
+/*
 table{
 	background-color: white;
 	opacity: 0.5;
@@ -138,6 +138,9 @@ th, td{
 	padding: 0.5rem;
 }
 
+*/
+
+/*Pagina de contacto*/
 form{
 	width: 50%;
 	margin: 0 auto;
