@@ -130,7 +130,7 @@ table{
 
 /*Pagina de contacto*/
 form{
-	width: 70%;
+	width: 80vw;
 	margin: 0 auto;
 	background-color: white;
 	opacity: 0.5;
@@ -313,4 +313,5 @@ div.galeria img{
  			}
  		form{
 	    width: 80%;
+	    font-size: 1.5rem;
 }

@@ -43,30 +43,36 @@
 <!--Main-->
  <main>
  	<h1 class="titulos">¿Queres contactarte con MERAKI?</h1>
-	<section id="tablaUno">
-		<form action="">
+<!--inicia formulario uno-->
+	<section>
+		<form>
 			<fieldset>
 				<legend>¡Dejanos tu información de contacto!</legend>
-				<label for="nombrecompleto">Nombre completo</label>
-				<input type="text" name="nombrecompleto" id="nombrecompleto" placeholder="Nombre completo">
-				<br>
-				<label for="celular">Celular</label>
-				<input type="text" name="celular" id="celular" placeholder="Tu numero telefonico">
-				<br>
-				<label for="email">Email</label>
-				<input type="email" name="email" id="email" placeholder="ej:tuemail@gmail.com">
-                <br>
-                <p>¿Queres recibir novedades y ofertas de MERAKI?</p>
-                <label for="si">Si</label>
-                <input type="radio" id="si" value="si" name="novedades">
-                <br>
-                <label for="no">No</label>
-                <input type="radio" id="no" value="no" name="novedades">
-                <br>
-                <textarea cols="30" rows="10" placeholder="Deje su consulta o pedido de turno aqui"></textarea>
-                <br>
-                <input type="submit" value="Enviar">
-                <input type="reset" value="Cancelar">
+		  		<div class="mb-3">
+		    		<label for="nombreCompleto" class="form-label">Nombre completo</label>
+		    		<input type="text" name="nombrecompleto" id="nombrecompleto" placeholder="Nombre y Apellido" aria-describedby="nombrecompleto">
+		    		<br>
+				  	<div class="mb-3">
+				    <label for="celular" class="form-label">Celular</label>
+		    		<input type="text" name="celular" id="celular" placeholder="Tu numero celular" aria-describedby="celular">
+				  	</div>
+				  	<div class="mb-3">
+				    <label for="email" class="form-label">Email</label>
+		    		<input type="email" name="email" placeholder="ej:tuemail@gmail.com" aria-describedby="mail">
+		    		<div id="emailHelp" class="form-text">No compartiremos tu mail con nadie más.</div>
+				  	</div>
+				  	<br>
+				  	<p>¿Queres recibir novedades y ofertas de MERAKI?</p>
+                		<label for="si">Si</label>
+                		<input type="radio" id="si" value="si" name="novedades">
+               		 <br>
+                		<label for="no">No</label>
+                		<input type="radio" id="no" value="no" name="novedades">
+                	<br>
+                		<textarea placeholder="Deje su consulta o pedido de turno aqui"></textarea>
+                	<br>
+				  	<button type="submit" class="btn btn-primary">Enviar</button>
+				  	<button type="reset" class="btn btn-primary">Borrar</button>
 			</fieldset>
 		</form>
 	</section>
