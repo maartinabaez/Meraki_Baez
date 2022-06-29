@@ -1,0 +1,70 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+main{
+	height: auto;
+	width: $cienAncho;
+	max-width: 100%;
+	background-image: url(../images/background.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	overflow: hidden;
+}
+
+h1{
+	font-family: $mainFont;
+	font-size: $xlSize;
+	color: $secondColor;
+	letter-spacing: 0.2rem;
+	padding-top: 1.5rem;
+	text-align: center;
+	text-shadow: 1px 2px 2px black, 0 0 25px white;
+}
+
+p.titulos{
+	font-family: $mainFont;
+	font-size: $xlSize;
+	color: $secondColor;
+	letter-spacing: 0.2rem;
+	padding-top: 1.5rem;
+	text-align: center;
+	text-shadow: 1px 2px 2px black, 0 0 25px white;
+}
+
+.textos{
+	font-family: $secondFont;
+	font-size: $lSize;
+	letter-spacing: 0.2rem;
+	color: $secondColor;
+	text-align: center;
+}
+
+//footer
+footer{
+	background-color: $thirdColor;
+	height: auto;
+	width: $cienAncho;
+	max-width: $porcentajeMax;
+	display: inline-flex;
+	justify-content: space-around;
+	overflow: hidden;
+		section h2.footerTitulo{
+			font-family:$mainFont;
+			font-size:$mdSize;
+			letter-spacing: 2px;
+			padding-left: 1.5rem;
+			color: $secondColor;
+			text-shadow: 1px 2px 2px black, 0 0 25px white;
+								}
+					ul li{
+						list-style: none;
+							a.iconos{
+								padding-left: 0.5rem;
+								align-content: center;
+									}
+							}
+						}
+			

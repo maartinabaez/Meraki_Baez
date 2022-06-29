@@ -1,0 +1,16 @@
+nav.menu{
+	background-color: $mainColor;
+	box-shadow: 5px 0 10px rgba(0, 0, 0, 0.6);
+	position: sticky;
+	overflow: hidden;
+			ul.menu_items{
+			font-family: $secondFont;
+			font-size: $mdSize;
+			letter-spacing: 2px;
+			text-transform: uppercase;
+		}
+		a{
+			&hover:
+			color: $animateColor;
+		}
+	}

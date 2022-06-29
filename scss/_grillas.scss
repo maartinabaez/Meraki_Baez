@@ -1,0 +1,34 @@
+/*index*/
+div.contenedor{
+	max-width: $porcentajeMax;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(4, auto);
+	grid-template-areas:"main main main"
+						"galeria galeria galeria"
+						"section section section"
+						"pie pie pie"
+}
+
+#main{
+	grid-area: main;
+}
+
+#galeriaFotos{
+	grid-area: galeria;
+
+}
+
+#section{
+	grid-area: section;
+}
+
+#footer{
+	grid-area: pie;
+}
+
+div.carrousel{
+	display: inline-flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+}
