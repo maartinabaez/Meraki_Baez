@@ -2,6 +2,14 @@
 	margin: 0;
 	padding: 0;
 }
+//map
+$paleta:(
+	'main':#F9CCE0,
+	'second': #BD6F95,
+	'third':#E494BA,
+	'animate':#ADA5A5,
+	'tabla': #040101,
+	'blanco': white, );
 
 main{
 	height: auto;
@@ -14,17 +22,19 @@ main{
 	overflow: hidden;
 }
 
+//map-get
 h1{
 	font-family: $mainFont;
 	font-size: $xlSize;
-	color: $secondColor;
+	color: map-get($map:$paleta, $key:second);
 	letter-spacing: 0.2rem;
 	padding-top: 1.5rem;
 	text-align: center;
 	text-shadow: 1px 2px 2px black, 0 0 25px white;
 }
 
-p.titulos{
+//extend
+.titulos{
 	font-family: $mainFont;
 	font-size: $xlSize;
 	color: $secondColor;
@@ -32,7 +42,13 @@ p.titulos{
 	padding-top: 1.5rem;
 	text-align: center;
 	text-shadow: 1px 2px 2px black, 0 0 25px white;
-}
+	}
+
+.titulo-contacto{
+	@extend .titulos;
+		text-shadow: 1em;
+	}
+
 
 .textos{
 	font-family: $secondFont;

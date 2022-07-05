@@ -1,3 +1,11 @@
+//mixin
+@mixin fonts($spacing,$fontsize, $align){
+	letter-spacing: $spacing;
+	font-size: $fontsize;
+	text-align: $align;
+}
+
+
 nav.menu{
 	background-color: $mainColor;
 	box-shadow: 5px 0 10px rgba(0, 0, 0, 0.6);
@@ -8,9 +16,23 @@ nav.menu{
 			font-size: $mdSize;
 			letter-spacing: 2px;
 			text-transform: uppercase;
+			@include fonts(2px, 1.5rem, 0);
+			}
+			a:hover{
+				color: $animateColor;
+				}
 		}
-		a{
-			&hover:
-			color: $animateColor;
-		}
-	}
+
+
+//PAGINA CONTACTO
+form{
+	width: $ochentaAncho;
+	margin: 0 auto;
+	background-color: $blanco;
+	opacity: 0.5;
+	filter: alpha(opacity=50);
+	color: $formColor;
+	font-family: $secondFont;
+	@include fonts(1px, 2rem, center);
+
+}

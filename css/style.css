@@ -22,7 +22,7 @@ h1 {
   text-align: center;
   text-shadow: 1px 2px 2px black, 0 0 25px white; }
 
-p.titulos {
+.titulos, .titulo-contacto {
   font-family: "Koulen", cursive;
   font-size: 4em;
   color: #BD6F95;
@@ -30,6 +30,9 @@ p.titulos {
   padding-top: 1.5rem;
   text-align: center;
   text-shadow: 1px 2px 2px black, 0 0 25px white; }
+
+.titulo-contacto {
+  text-shadow: 1em; }
 
 .textos {
   font-family: "Akshar", sans-serif;
@@ -68,7 +71,24 @@ nav.menu {
     font-family: "Akshar", sans-serif;
     font-size: 1.5rem;
     letter-spacing: 2px;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 1.5rem;
+    text-align: 0; }
+  nav.menu a:hover {
+    color: #ADA5A5; }
+
+form {
+  width: 80vw;
+  margin: 0 auto;
+  background-color: white;
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+  color: black;
+  font-family: "Akshar", sans-serif;
+  letter-spacing: 1px;
+  font-size: 2rem;
+  text-align: center; }
 
 /*index*/
 div.contenedor {
