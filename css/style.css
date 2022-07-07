@@ -1,4 +1,56 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Akshar:wght@300&family=Koulen&display=swap");
+/*media queries*/
+@media screen and (max-width: 300px) {
+  .carrousel {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    align-items: center; }
+  #footer {
+    display: block;
+    align-items: center; }
+  .somosMeraki {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center; }
+  .galeria-flex {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center; }
+  .titulos, .titulo-contacto {
+    font-size: 0.5em; }
+  .textos {
+    font-size: 0.4em; }
+  form {
+    width: 100%; } }
+
+@media screen and (max-width: 768px) {
+  #footer {
+    display: block;
+    align-items: center; }
+  .carrousel {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center; }
+  .somosMeraki {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center; }
+  .galeria-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+  .titulos, .titulo-contacto {
+    font-size: 1.5em; }
+  .textos {
+    font-size: 0.8em; }
+  figure {
+    width: 30%; }
+  form {
+    width: 80%;
+    font-size: 1.5rem; } }
+
 * {
   margin: 0;
   padding: 0; }
@@ -22,6 +74,7 @@ h1 {
   text-align: center;
   text-shadow: 1px 2px 2px black, 0 0 25px white; }
 
+/*clases*/
 .titulos, .titulo-contacto {
   font-family: "Koulen", cursive;
   font-size: 4em;
@@ -39,8 +92,10 @@ h1 {
   font-size: 2.5em;
   letter-spacing: 0.2rem;
   color: #BD6F95;
-  text-align: center; }
+  text-align: center;
+  padding: 1em; }
 
+/*footer*/
 footer {
   background-color: #E494BA;
   height: auto;
@@ -59,7 +114,6 @@ footer {
   footer ul li {
     list-style: none; }
     footer ul li a.iconos {
-      padding-left: 0.5rem;
       align-content: center; }
 
 nav.menu {
@@ -78,6 +132,13 @@ nav.menu {
   nav.menu a:hover {
     color: #ADA5A5; }
 
+/*index*/
+.carrousel {
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly; }
+
+/*Página de Contacto*/
 form {
   width: 80vw;
   margin: 0 auto;
@@ -89,6 +150,44 @@ form {
   letter-spacing: 1px;
   font-size: 2rem;
   text-align: center; }
+
+/*Página de Productos*/
+div .fila-img {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly; }
+
+table {
+  letter-spacing: 1px;
+  font-size: 1.5rem;
+  text-align: center;
+  font-family: "Akshar", sans-serif;
+  color: #040101; }
+
+/*Página de Servicios*/
+figure {
+  width: 30%; }
+  figure:hover {
+    border: 1px solid lightcoral;
+    transition: transform .2s;
+    transform: scale(1); }
+    figure:hover img {
+      width: 100%;
+      height: auto; }
+
+.figure-text {
+  letter-spacing: 1px;
+  font-size: 1.5rem;
+  text-align: center;
+  text-shadow: 2px 2px 5px purple;
+  padding: 0.7em;
+  font-family: "Akshar", sans-serif;
+  color: #040101; }
+
+.galeria {
+  margin: 10px 20px;
+  box-shadow: 0 4px 8px 0 lightpink, 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 350px; }
 
 /*index*/
 div.contenedor {
@@ -114,3 +213,23 @@ div.carrousel {
   display: inline-flex;
   flex-wrap: wrap;
   justify-content: space-evenly; }
+
+/*pagina de servicios*/
+.galeria-flex {
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, auto);
+  grid-template-areas: "encabezado encabezado encabezado" "figUno figDos figTres" "footer footer footer"; }
+
+#encabezado-servicios {
+  grid-area: encabezado; }
+
+#figureUno {
+  grid-area: figUno; }
+
+#figureDos {
+  grid-area: figDos; }
+
+#figureTres {
+  grid-area: figTres; }

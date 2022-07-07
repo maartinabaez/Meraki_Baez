@@ -23,8 +23,15 @@ nav.menu{
 				}
 		}
 
+/*index*/
+.carrousel{
+	display: inline-flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+}
 
-//PAGINA CONTACTO
+
+/*Página de Contacto*/
 form{
 	width: $ochentaAncho;
 	margin: 0 auto;
@@ -36,3 +43,45 @@ form{
 	@include fonts(1px, 2rem, center);
 
 }
+
+/*Página de Productos*/
+div .fila-img{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	}
+
+table{
+  	@include fonts(1px, 1.5rem, center)
+  	font-family: $secondFont;
+	color: $tableColor;
+}
+
+/*Página de Servicios*/
+figure{
+ 		width: $treintaAncho;
+ 		&:hover{
+ 			border: 1px solid lightcoral;
+ 			transition: transform .2s;
+			transform: scale(1);
+ 		img{
+ 		width: $porcentajeMax;
+		height: auto;
+		}
+	}
+}
+
+//clases
+.figure-text{
+ 			@include fonts(1px, 1.5rem, center)
+			text-shadow: 2px 2px 5px purple;
+			padding: 0.7em;
+			font-family: $secondFont;
+			color: $tableColor;
+ 		}
+
+ .galeria{
+			margin: 10px 20px;
+			box-shadow: 0 4px 8px 0 lightpink, 0 6px 20px 0 rgba(0,0,0,0.19);
+			width: 350px;
+		}

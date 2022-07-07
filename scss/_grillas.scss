@@ -32,3 +32,32 @@ div.carrousel{
 	flex-wrap: wrap;
 	justify-content: space-evenly;
 }
+
+/*pagina de servicios*/
+
+.galeria-flex{
+	max-width: 100%;
+	display: grid;
+	grid-template-columns: repeat(3,1fr);
+	grid-template-rows: repeat(3, auto);
+	grid-template-areas: "encabezado encabezado encabezado"
+	"figUno figDos figTres"
+	"footer footer footer";
+
+}
+
+#encabezado-servicios{
+	grid-area: encabezado;
+}
+
+#figureUno{
+	grid-area: figUno;
+}
+
+#figureDos{
+	grid-area: figDos;
+}
+
+#figureTres{
+	grid-area: figTres;
+}

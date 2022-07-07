@@ -1,0 +1,76 @@
+/*media queries*/
+@media screen and (max-width: 300px) {
+	.carrousel{
+		display: flex;
+			flex-flow: column wrap;
+			justify-content: flex-start;
+			align-items: center;
+		}
+	#footer{
+			display: block;
+			align-items: center;
+		}
+
+	.somosMeraki{
+			display: flex;
+			flex-flow: column wrap;
+			justify-content: center;
+		}
+
+	.galeria-flex{
+			display: flex;
+			flex-flow: column wrap;
+			justify-content: center;
+		}
+
+	.titulos{
+			font-size: 0.5em;
+				}
+
+	.textos{
+			font-size: 0.4em;
+				}
+	form{
+			width: 100%;
+		}
+}
+
+@media screen and (max-width: 768px){
+ 		#footer{
+			display: block;
+			align-items: center;
+		}
+
+		.carrousel{
+			display: flex;
+			flex-flow: column wrap;
+			align-items: center;
+		}
+
+		.somosMeraki{
+			display: flex;
+			flex-flow: column wrap;
+			justify-content: center;
+		}
+
+		.galeria-flex{
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+		}
+		.titulos{
+			font-size: 1.5em;
+				}
+
+		.textos{
+			font-size: 0.8em;
+				}
+		figure{
+ 		width: 30%;
+ 			}
+ 		form{
+	    width: 80%;
+	    font-size: 1.5rem;
+	}	
+}
+

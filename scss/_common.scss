@@ -34,6 +34,7 @@ h1{
 }
 
 //extend
+/*clases*/
 .titulos{
 	font-family: $mainFont;
 	font-size: $xlSize;
@@ -56,9 +57,10 @@ h1{
 	letter-spacing: 0.2rem;
 	color: $secondColor;
 	text-align: center;
+	padding: 1em;
 }
 
-//footer
+/*footer*/
 footer{
 	background-color: $thirdColor;
 	height: auto;
@@ -78,9 +80,7 @@ footer{
 					ul li{
 						list-style: none;
 							a.iconos{
-								padding-left: 0.5rem;
 								align-content: center;
 									}
 							}
 						}
-			
