@@ -18,17 +18,27 @@
 		}
 
 	.galeria-flex{
-			display: flex;
-			flex-flow: column wrap;
-			justify-content: center;
+			display: grid;
+			grid-template-columns: repeat(1,1fr);
+			grid-template-rows: repeat(5, auto);
+			grid-template-areas: "encabezado"
+			"figUno"
+			"figDos"
+			"figTres"
+			"footer";
+
 		}
 
 	.titulos{
-			font-size: 0.5em;
+			font-size: 1em;
+			text-shadow:purple;
+			letter-spacing: 0;
 				}
 
 	.textos{
-			font-size: 0.4em;
+			font-size: 0.8em;
+			text-shadow:black;
+			letter-spacing: 0;
 				}
 	form{
 			width: 100%;
@@ -54,16 +64,26 @@
 		}
 
 		.galeria-flex{
-			display: flex;
-			flex-direction: column;
-			justify-content: center;
+			display: grid;
+			grid-template-columns: repeat(1,1fr);
+			grid-template-rows: repeat(5, auto);
+			grid-template-areas: "encabezado"
+			"figUno"
+			"figDos"
+			"figTres"
+			"footer";
 		}
+
 		.titulos{
 			font-size: 1.5em;
+			text-shadow:purple;
+			letter-spacing: 0;
 				}
 
 		.textos{
-			font-size: 0.8em;
+			font-size: 1em;
+			text-shadow: black;
+			letter-spacing: 0;
 				}
 		figure{
  		width: 30%;

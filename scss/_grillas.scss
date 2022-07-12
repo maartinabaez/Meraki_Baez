@@ -36,7 +36,8 @@ div.carrousel{
 /*pagina de servicios*/
 
 .galeria-flex{
-	max-width: 100%;
+	max-width: $porcentajeMax;
+	height: auto;
 	display: grid;
 	grid-template-columns: repeat(3,1fr);
 	grid-template-rows: repeat(3, auto);

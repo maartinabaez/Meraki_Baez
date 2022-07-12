@@ -1,56 +1,5 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Akshar:wght@300&family=Koulen&display=swap");
-/*media queries*/
-@media screen and (max-width: 300px) {
-  .carrousel {
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: flex-start;
-    align-items: center; }
-  #footer {
-    display: block;
-    align-items: center; }
-  .somosMeraki {
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center; }
-  .galeria-flex {
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center; }
-  .titulos, .titulo-contacto {
-    font-size: 0.5em; }
-  .textos {
-    font-size: 0.4em; }
-  form {
-    width: 100%; } }
-
-@media screen and (max-width: 768px) {
-  #footer {
-    display: block;
-    align-items: center; }
-  .carrousel {
-    display: flex;
-    flex-flow: column wrap;
-    align-items: center; }
-  .somosMeraki {
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center; }
-  .galeria-flex {
-    display: flex;
-    flex-direction: column;
-    justify-content: center; }
-  .titulos, .titulo-contacto {
-    font-size: 1.5em; }
-  .textos {
-    font-size: 0.8em; }
-  figure {
-    width: 30%; }
-  form {
-    width: 80%;
-    font-size: 1.5rem; } }
-
 * {
   margin: 0;
   padding: 0; }
@@ -101,12 +50,11 @@ footer {
   height: auto;
   width: 100vw;
   max-width: 100%;
-  display: inline-flex;
-  justify-content: space-around;
   overflow: hidden; }
   footer section h2.footerTitulo {
     font-family: "Koulen", cursive;
     font-size: 1.5rem;
+    text-align: center;
     letter-spacing: 2px;
     padding-left: 1.5rem;
     color: #BD6F95;
@@ -115,6 +63,23 @@ footer {
     list-style: none; }
     footer ul li a.iconos {
       align-content: center; }
+
+.footerTitle {
+  font-family: "Koulen", cursive;
+  font-size: 1.5rem;
+  text-align: center;
+  letter-spacing: 2px;
+  padding-left: 1.5rem;
+  color: #BD6F95;
+  text-shadow: 1px 2px 2px black, 0 0 25px white; }
+
+.iconos {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center; }
+
+ul li {
+  list-style: none; }
 
 nav.menu {
   background-color: #F9CCE0;
@@ -217,6 +182,7 @@ div.carrousel {
 /*pagina de servicios*/
 .galeria-flex {
   max-width: 100%;
+  height: auto;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, auto);
@@ -233,3 +199,64 @@ div.carrousel {
 
 #figureTres {
   grid-area: figTres; }
+
+/*media queries*/
+@media screen and (max-width: 300px) {
+  .carrousel {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    align-items: center; }
+  #footer {
+    display: block;
+    align-items: center; }
+  .somosMeraki {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center; }
+  .galeria-flex {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(5, auto);
+    grid-template-areas: "encabezado" "figUno" "figDos" "figTres" "footer"; }
+  .titulos, .titulo-contacto {
+    font-size: 1em;
+    text-shadow: purple;
+    letter-spacing: 0; }
+  .textos {
+    font-size: 0.8em;
+    text-shadow: black;
+    letter-spacing: 0; }
+  form {
+    width: 100%; } }
+
+@media screen and (max-width: 768px) {
+  #footer {
+    display: block;
+    align-items: center; }
+  .carrousel {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center; }
+  .somosMeraki {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center; }
+  .galeria-flex {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(5, auto);
+    grid-template-areas: "encabezado" "figUno" "figDos" "figTres" "footer"; }
+  .titulos, .titulo-contacto {
+    font-size: 1.5em;
+    text-shadow: purple;
+    letter-spacing: 0; }
+  .textos {
+    font-size: 1em;
+    text-shadow: black;
+    letter-spacing: 0; }
+  figure {
+    width: 30%; }
+  form {
+    width: 80%;
+    font-size: 1.5rem; } }
