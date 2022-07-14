@@ -52,6 +52,7 @@ footer {
   max-width: 100%;
   overflow: hidden; }
   footer section h2.footerTitulo {
+    padding-top: 0.3em;
     font-family: "Koulen", cursive;
     font-size: 1.5rem;
     text-align: center;
@@ -117,7 +118,7 @@ form {
   text-align: center; }
 
 /*Página de Productos*/
-div .fila-img {
+.fila-img {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly; }
@@ -153,6 +154,14 @@ figure {
   margin: 10px 20px;
   box-shadow: 0 4px 8px 0 lightpink, 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   width: 350px; }
+
+a {
+  text-decoration: none; }
+
+.rights {
+  font-family: serif;
+  text-align: center;
+  color: black; }
 
 /*index*/
 div.contenedor {
@@ -226,7 +235,8 @@ div.carrousel {
   .textos {
     font-size: 0.8em;
     text-shadow: black;
-    letter-spacing: 0; }
+    letter-spacing: 0;
+    text-transform: uppercase; }
   form {
     width: 100%; } }
 
@@ -254,7 +264,8 @@ div.carrousel {
   .textos {
     font-size: 1em;
     text-shadow: black;
-    letter-spacing: 0; }
+    letter-spacing: 0;
+    text-transform: uppercase; }
   figure {
     width: 30%; }
   form {
