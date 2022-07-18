@@ -56,6 +56,7 @@ h1{
 	font-size: $lSize;
 	letter-spacing: 0.2rem;
 	color: $secondColor;
+	text-shadow: 1px 2px 2px black;
 	text-align: center;
 	padding: 1em;
 }
@@ -67,23 +68,30 @@ footer{
 	width: $cienAncho;
 	max-width: $porcentajeMax;
 	overflow: hidden;
-		section h2.footerTitulo{
-			padding-top: 0.3em;
+		section{
+			display: flex;
+			flex-flow: column wrap;
+			h2.footerTitulo{
+			padding-top: 0.4em;
+			padding-left: 0;
 			font-family:$mainFont;
 			font-size:$mdSize;
 			text-align: center;
 			letter-spacing: 2px;
-			padding-left: 1.5rem;
 			color: $secondColor;
 			text-shadow: 1px 2px 2px black, 0 0 25px white;
 								}
-					ul li{
+					ul {
+						padding-left: 0;
+					}
+					li{
 						list-style: none;
 							a.iconos{
 								align-content: center;
 									}
 							}
 						}
+					}
 
 .footerTitle{
 			font-family:$mainFont;
@@ -104,3 +112,7 @@ footer{
 ul li{
 		list-style: none;
 		}
+
+ul{
+	padding-left: 0;
+}

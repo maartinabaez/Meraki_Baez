@@ -1,7 +1,7 @@
 /*media queries*/
 @media screen and (max-width: 300px) {
 	.carrousel{
-		display: flex;
+			display: flex;
 			flex-flow: column wrap;
 			justify-content: flex-start;
 			align-items: center;
@@ -28,6 +28,11 @@
 			"footer";
 
 		}
+	.galeria{
+		margin:0;
+		width:100%;
+
+	}
 
 	.titulos{
 			font-size: 1em;
@@ -36,10 +41,10 @@
 				}
 
 	.textos{
+			color:$formColor;
 			font-size: 0.8em;
-			text-shadow:black;
+			text-shadow: 0 0 25px white;
 			letter-spacing: 0;
-			text-transform: uppercase
 				}
 	form{
 			width: 100%;
@@ -74,6 +79,10 @@
 			"figTres"
 			"footer";
 		}
+		.galeria{
+			margin:0;
+			width: 100%;
+		}
 
 		.titulos{
 			font-size: 1.5em;
@@ -82,10 +91,10 @@
 				}
 
 		.textos{
+			color:$formColor;
 			font-size: 1em;
-			text-shadow: black;
+			text-shadow: 0 0 25px white;
 			letter-spacing: 0;
-			text-transform: uppercase
 				}
 		figure{
  		width: 30%;

@@ -41,6 +41,7 @@ h1 {
   font-size: 2.5em;
   letter-spacing: 0.2rem;
   color: #BD6F95;
+  text-shadow: 1px 2px 2px black;
   text-align: center;
   padding: 1em; }
 
@@ -51,19 +52,24 @@ footer {
   width: 100vw;
   max-width: 100%;
   overflow: hidden; }
-  footer section h2.footerTitulo {
-    padding-top: 0.3em;
-    font-family: "Koulen", cursive;
-    font-size: 1.5rem;
-    text-align: center;
-    letter-spacing: 2px;
-    padding-left: 1.5rem;
-    color: #BD6F95;
-    text-shadow: 1px 2px 2px black, 0 0 25px white; }
-  footer ul li {
-    list-style: none; }
-    footer ul li a.iconos {
-      align-content: center; }
+  footer section {
+    display: flex;
+    flex-flow: column wrap; }
+    footer section h2.footerTitulo {
+      padding-top: 0.4em;
+      padding-left: 0;
+      font-family: "Koulen", cursive;
+      font-size: 1.5rem;
+      text-align: center;
+      letter-spacing: 2px;
+      color: #BD6F95;
+      text-shadow: 1px 2px 2px black, 0 0 25px white; }
+    footer section ul {
+      padding-left: 0; }
+    footer section li {
+      list-style: none; }
+      footer section li a.iconos {
+        align-content: center; }
 
 .footerTitle {
   font-family: "Koulen", cursive;
@@ -81,6 +87,9 @@ footer {
 
 ul li {
   list-style: none; }
+
+ul {
+  padding-left: 0; }
 
 nav.menu {
   background-color: #F9CCE0;
@@ -228,15 +237,18 @@ div.carrousel {
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(5, auto);
     grid-template-areas: "encabezado" "figUno" "figDos" "figTres" "footer"; }
+  .galeria {
+    margin: 0;
+    width: 100%; }
   .titulos, .titulo-contacto {
     font-size: 1em;
     text-shadow: purple;
     letter-spacing: 0; }
   .textos {
+    color: black;
     font-size: 0.8em;
-    text-shadow: black;
-    letter-spacing: 0;
-    text-transform: uppercase; }
+    text-shadow: 0 0 25px white;
+    letter-spacing: 0; }
   form {
     width: 100%; } }
 
@@ -257,15 +269,18 @@ div.carrousel {
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(5, auto);
     grid-template-areas: "encabezado" "figUno" "figDos" "figTres" "footer"; }
+  .galeria {
+    margin: 0;
+    width: 100%; }
   .titulos, .titulo-contacto {
     font-size: 1.5em;
     text-shadow: purple;
     letter-spacing: 0; }
   .textos {
+    color: black;
     font-size: 1em;
-    text-shadow: black;
-    letter-spacing: 0;
-    text-transform: uppercase; }
+    text-shadow: 0 0 25px white;
+    letter-spacing: 0; }
   figure {
     width: 30%; }
   form {
